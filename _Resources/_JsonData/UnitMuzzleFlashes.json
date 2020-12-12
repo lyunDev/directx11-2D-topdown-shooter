@@ -1,0 +1,145 @@
+{
+	"Assault" : 
+	{
+		"Size" : 
+		[
+			100.0,
+			100.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\Plazma_Yellow_Splash.png"
+		]
+	},
+	"BrownAssault" : 
+	{
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\FireBall_Orange_Splash.png"
+		]
+	},
+	"Cannoneer" : 
+	{
+		"Size" : 
+		[
+			100.0,
+			200.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\FireBall_Orange_Splash.png"
+		]
+	},
+	"Clone" : 
+	{
+		"Size" : 
+		[
+			100.0,
+			100.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\Ion_Blue_Splash.png"
+		]
+	},
+	"Engineer" : 
+	{
+		"Size" : 
+		[
+			60.0,
+			60.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\PlazmaElipse_Green_Splash.png"
+		]
+	},
+	"Medic" : 
+	{
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Nebulizer" : 
+	{
+		"Size" : 
+		[
+			100.0,
+			100.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\Plazma_Yellow_Splash.png"
+		]
+	},
+	"Pyro" : 
+	{
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"RedAssault" : 
+	{
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Sniper" : 
+	{
+		"Size" : 
+		[
+			100.0,
+			100.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\PlazmaArrow_Red_Splash.png"
+		]
+	},
+	"Tech" : 
+	{
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	}
+}

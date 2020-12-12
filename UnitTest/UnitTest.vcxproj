@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{160D6E8A-EEC1-4088-B94F-77E7A5C3AE7B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>UnitTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\MySQL\MySQL Server 5.7\include;$(IncludePath);$(DH)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\MySQL\MySQL Server 5.7\lib;$(LibraryPath);$(DL)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Program Files (x86)\MySQL\MySQL Server 5.7\include;$(IncludePath);$(DH)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;C:\Program Files %28x86%29\MySQL\MySQL Server 5.7\lib;$(LibraryPath);$(DL)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./;$(SolutionDir)Framework/;../_Libraries/;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../_Libraries/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./;$(SolutionDir)Framework/;../_Libraries/;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../_Libraries/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AI\BehaviourTree\MutantBTGenerator.h" />
+    <ClInclude Include="AI\BehaviourTree\MutantNodes.h" />
+    <ClInclude Include="AI\Flocking\AlignmentBehaviour.h" />
+    <ClInclude Include="AI\Flocking\AvoidanceBehaviour.h" />
+    <ClInclude Include="AI\Flocking\CohereToCenterBehaviour.h" />
+    <ClInclude Include="AI\Flocking\CohesionBehaviour.h" />
+    <ClInclude Include="AI\Flocking\CompositeBehaviour.h" />
+    <ClInclude Include="AI\Flocking\Flock.h" />
+    <ClInclude Include="AI\Flocking\FlockAgent.h" />
+    <ClInclude Include="AI\Flocking\IFlockBehaviour.h" />
+    <ClInclude Include="AI\Flocking\RandomMovementBehaviour.h" />
+    <ClInclude Include="AI\Flocking\StayInRadiusBehaviour.h" />
+    <ClInclude Include="AI\Flocking\SteeredCohesionBehaviour.h" />
+    <ClInclude Include="AI\FSM\EnemyDroneState.h" />
+    <ClInclude Include="AI\FSM\EnemyState.h" />
+    <ClInclude Include="AI\FSM\FSMState.h" />
+    <ClInclude Include="AsyncLoader\LoadAsync.h" />
+    <ClInclude Include="Demos\GUIDemo.h" />
+    <ClInclude Include="Demos\JsonDemo.h" />
+    <ClInclude Include="Demos\TMapDemo.h" />
+    <ClInclude Include="Editor\DataGenerator.h" />
+    <ClInclude Include="Editor\EditData.h" />
+    <ClInclude Include="Event\EventDispatcher.h" />
+    <ClInclude Include="Event\EventTypes.h" />
+    <ClInclude Include="GameEffects\AfterImage.h" />
+    <ClInclude Include="GameEffects\BoostEffect.h" />
+    <ClInclude Include="GameEffects\ExplosionEffect.h" />
+    <ClInclude Include="GameEffects\PlayerPlazmaExplosion.h" />
+    <ClInclude Include="GameObject\Actor.h" />
+    <ClInclude Include="GameObject\Backgorund\Background.h" />
+    <ClInclude Include="GameObject\Backgorund\BackgroundGenerator.h" />
+    <ClInclude Include="GameObject\Backgorund\SciFiBg.h" />
+    <ClInclude Include="GameObject\BulletRemoveEffect.h" />
+    <ClInclude Include="GameObject\CrossHair.h" />
+    <ClInclude Include="GameObject\Drone.h" />
+    <ClInclude Include="GameObject\Enemies\Assault.h" />
+    <ClInclude Include="GameObject\Enemies\BrownAssault.h" />
+    <ClInclude Include="GameObject\Enemies\Cannoneer.h" />
+    <ClInclude Include="GameObject\Enemies\Clone.h" />
+    <ClInclude Include="GameObject\Enemies\EnemyUnit.h" />
+    <ClInclude Include="GameObject\Enemies\Engineer.h" />
+    <ClInclude Include="GameObject\Enemies\Flocks\Cricket.h" />
+    <ClInclude Include="GameObject\Enemies\Flocks\EnemyFlock.h" />
+    <ClInclude Include="GameObject\Enemies\Flocks\Locust.h" />
+    <ClInclude Include="GameObject\Enemies\Medic.h" />
+    <ClInclude Include="GameObject\Enemies\Mutant.h" />
+    <ClInclude Include="GameObject\Enemies\Nebulizer.h" />
+    <ClInclude Include="GameObject\Enemies\Pyro.h" />
+    <ClInclude Include="GameObject\Enemies\RedAssault.h" />
+    <ClInclude Include="GameObject\Enemies\Scout.h" />
+    <ClInclude Include="GameObject\Enemies\Sniper.h" />
+    <ClInclude Include="GameObject\Enemies\Tech.h" />
+    <ClInclude Include="GameObject\FireBullet.h" />
+    <ClInclude Include="GameObject\HPBar.h" />
+    <ClInclude Include="GameObject\LevelUpEffect.h" />
+    <ClInclude Include="GameObject\Player.h" />
+    <ClInclude Include="GameObject\Projectiles\BlueSwirl.h" />
+    <ClInclude Include="GameObject\Projectiles\Bullet.h" />
+    <ClInclude Include="GameObject\Projectiles\CricketBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\Explosion.h" />
+    <ClInclude Include="GameObject\Projectiles\FireBallRedHardBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\FireBallRedMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\GasGreenBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\GasGreenMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\IonBlueBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\IonBlueMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\IonRedBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\IonRedMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\LocustBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\MuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\NormalBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\NormalMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\PlayerPlazmaBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\PlayerPlazmaMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaArrowRedBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaArrowRedMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaElipseGreenBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaElipseGreenMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaElipseRedBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaElipseRedMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaYellowBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\PlazmaYellowMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\AssaultBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\CannoneerBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\CloneBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\EngineerBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\NebulizerBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\SniperBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitBullet\TechBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\AssaultMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\CannoneerMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\CloneMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\EngineerMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\NebulizerMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\SniperMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\UnitMuzzleFlash\TechMuzzleFlash.h" />
+    <ClInclude Include="GameObject\Projectiles\WarWeaponBullet.h" />
+    <ClInclude Include="GameObject\Projectiles\WarWeaponMuzzleFlash.h" />
+    <ClInclude Include="GameObject\RespawnShip.h" />
+    <ClInclude Include="GameObject\ScoreItem.h" />
+    <ClInclude Include="GameObject\Skills\Shield.h" />
+    <ClInclude Include="GameObject\Skills\WideExplosion.h" />
+    <ClInclude Include="GameObject\WarMachine.h" />
+    <ClInclude Include="GameObject\WarWeapon.h" />
+    <ClInclude Include="GameUI\BossCautionPannel.h" />
+    <ClInclude Include="GameUI\BossHPBar.h" />
+    <ClInclude Include="GameUI\FadeInOut.h" />
+    <ClInclude Include="GameUI\GameClearPannel.h" />
+    <ClInclude Include="GameUI\PlayerHPBar.h" />
+    <ClInclude Include="Helper\ActionSequencer.h" />
+    <ClInclude Include="Manager\EventManager.h" />
+    <ClInclude Include="Manager\FlockManager.h" />
+    <ClInclude Include="Manager\RespawnManager.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="Scenes\MainScene.h" />
+    <ClInclude Include="Scenes\SceneTransition.h" />
+    <ClInclude Include="Scenes\TestStage.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AI\BehaviourTree\MutantBTGenerator.cpp" />
+    <ClCompile Include="AI\Flocking\AlignmentBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\AvoidanceBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\CohereToCenterBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\CohesionBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\CompositeBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\Flock.cpp" />
+    <ClCompile Include="AI\Flocking\FlockAgent.cpp" />
+    <ClCompile Include="AI\Flocking\RandomMovementBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\StayInRadiusBehaviour.cpp" />
+    <ClCompile Include="AI\Flocking\SteeredCohesionBehaviour.cpp" />
+    <ClCompile Include="AI\FSM\EnemyDroneState.cpp" />
+    <ClCompile Include="AI\FSM\EnemyState.cpp" />
+    <ClCompile Include="AI\FSM\FSMState.cpp" />
+    <ClCompile Include="AsyncLoader\LoadAsync.cpp" />
+    <ClCompile Include="Demos\GUIDemo.cpp" />
+    <ClCompile Include="Demos\JsonDemo.cpp" />
+    <ClCompile Include="Demos\TMapDemo.cpp" />
+    <ClCompile Include="Editor\DataGenerator.cpp" />
+    <ClCompile Include="Event\EventDispatcher.cpp" />
+    <ClCompile Include="GameEffects\AfterImage.cpp" />
+    <ClCompile Include="GameEffects\BoostEffect.cpp" />
+    <ClCompile Include="GameEffects\ExplosionEffect.cpp" />
+    <ClCompile Include="GameEffects\PlayerPlazmaExplosion.cpp" />
+    <ClCompile Include="GameObject\Actor.cpp" />
+    <ClCompile Include="GameObject\Backgorund\Background.cpp" />
+    <ClCompile Include="GameObject\Backgorund\BackgroundGenerator.cpp" />
+    <ClCompile Include="GameObject\Backgorund\SciFiBg.cpp" />
+    <ClCompile Include="GameObject\BulletRemoveEffect.cpp" />
+    <ClCompile Include="GameObject\CrossHair.cpp" />
+    <ClCompile Include="GameObject\Drone.cpp" />
+    <ClCompile Include="GameObject\Enemies\Assault.cpp" />
+    <ClCompile Include="GameObject\Enemies\BrownAssault.cpp" />
+    <ClCompile Include="GameObject\Enemies\Cannoneer.cpp" />
+    <ClCompile Include="GameObject\Enemies\Clone.cpp" />
+    <ClCompile Include="GameObject\Enemies\EnemyUnit.cpp" />
+    <ClCompile Include="GameObject\Enemies\Engineer.cpp" />
+    <ClCompile Include="GameObject\Enemies\Flocks\Cricket.cpp" />
+    <ClCompile Include="GameObject\Enemies\Flocks\EnemyFlock.cpp" />
+    <ClCompile Include="GameObject\Enemies\Flocks\Locust.cpp" />
+    <ClCompile Include="GameObject\Enemies\Medic.cpp" />
+    <ClCompile Include="GameObject\Enemies\Mutant.cpp" />
+    <ClCompile Include="GameObject\Enemies\Nebulizer.cpp" />
+    <ClCompile Include="GameObject\Enemies\Pyro.cpp" />
+    <ClCompile Include="GameObject\Enemies\RedAssault.cpp" />
+    <ClCompile Include="GameObject\Enemies\Scout.cpp" />
+    <ClCompile Include="GameObject\Enemies\Sniper.cpp" />
+    <ClCompile Include="GameObject\Enemies\Tech.cpp" />
+    <ClCompile Include="GameObject\FireBullet.cpp" />
+    <ClCompile Include="GameObject\HPBar.cpp" />
+    <ClCompile Include="GameObject\LevelUpEffect.cpp" />
+    <ClCompile Include="GameObject\Player.cpp" />
+    <ClCompile Include="GameObject\Projectiles\BlueSwirl.cpp" />
+    <ClCompile Include="GameObject\Projectiles\Bullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\CricketBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\Explosion.cpp" />
+    <ClCompile Include="GameObject\Projectiles\FireBallRedHardBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\FireBallRedMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\GasGreenBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\GasGreenMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\IonBlueBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\IonBlueMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\IonRedBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\IonRedMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\LocustBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\MuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\NormalBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\NormalMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlayerPlazmaBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlayerPlazmaMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaArrowRedBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaArrowRedMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaElipseGreenBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaElipseGreenMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaElipseRedBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaElipseRedMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaYellowBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\PlazmaYellowMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\AssaultBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\CannoneerBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\CloneBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\EngineerBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\NebulizerBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\SniperBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitBullet\TechBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\AssaultMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\CannoneerMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\CloneMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\EngineerMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\NebulizerMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\SniperMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\UnitMuzzleFlash\TechMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\Projectiles\WarWeaponBullet.cpp" />
+    <ClCompile Include="GameObject\Projectiles\WarWeaponMuzzleFlash.cpp" />
+    <ClCompile Include="GameObject\RespawnShip.cpp" />
+    <ClCompile Include="GameObject\ScoreItem.cpp" />
+    <ClCompile Include="GameObject\Skills\Shield.cpp" />
+    <ClCompile Include="GameObject\Skills\WideExplosion.cpp" />
+    <ClCompile Include="GameObject\WarMachine.cpp" />
+    <ClCompile Include="GameObject\WarWeapon.cpp" />
+    <ClCompile Include="GameUI\BossCautionPannel.cpp" />
+    <ClCompile Include="GameUI\BossHPBar.cpp" />
+    <ClCompile Include="GameUI\FadeInOut.cpp" />
+    <ClCompile Include="GameUI\GameClearPannel.cpp" />
+    <ClCompile Include="GameUI\PlayerHPBar.cpp" />
+    <ClCompile Include="Helper\ActionSequencer.cpp" />
+    <ClCompile Include="Manager\EventManager.cpp" />
+    <ClCompile Include="Manager\FlockManager.cpp" />
+    <ClCompile Include="Manager\RespawnManager.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Scenes\MainScene.cpp" />
+    <ClCompile Include="Scenes\SceneTransition.cpp" />
+    <ClCompile Include="Scenes\TestStage.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

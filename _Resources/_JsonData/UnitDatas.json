@@ -1,0 +1,233 @@
+{
+	"Assault" : 
+	{
+		"FirePosOffset" : 
+		[
+			10.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 100,
+		"MoveSpeed" : 130,
+		"Size" : 
+		[
+			70.0,
+			70.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Assault.png"
+		]
+	},
+	"BrownAssault" : 
+	{
+		"FirePosOffset" : 
+		[
+			10.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 100,
+		"MoveSpeed" : 70,
+		"Size" : 
+		[
+			50.0,
+			50.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Brown Assault.png"
+		]
+	},
+	"Cannoneer" : 
+	{
+		"FirePosOffset" : 
+		[
+			10.0,
+			130.0,
+			0.0
+		],
+		"MaxHP" : 200,
+		"MoveSpeed" : 40,
+		"Size" : 
+		[
+			130.0,
+			130.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Cannoneer.png"
+		]
+	},
+	"Clone" : 
+	{
+		"FirePosOffset" : 
+		[
+			10.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 110,
+		"MoveSpeed" : 70,
+		"Size" : 
+		[
+			50.0,
+			50.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Clone.png"
+		]
+	},
+	"Engineer" : 
+	{
+		"FirePosOffset" : 
+		[
+			19.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 300,
+		"MoveSpeed" : 70,
+		"Size" : 
+		[
+			70.0,
+			70.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Engineer.png"
+		]
+	},
+	"Medic" : 
+	{
+		"FirePosOffset" : 
+		[
+			5.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 100,
+		"MoveSpeed" : 100,
+		"Size" : 
+		[
+			70.0,
+			70.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Medic.png"
+		]
+	},
+	"Nebulizer" : 
+	{
+		"FirePosOffset" : 
+		[
+			2.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 200,
+		"MoveSpeed" : 40,
+		"Size" : 
+		[
+			120.0,
+			120.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Nebulizer.png"
+		]
+	},
+	"Pyro" : 
+	{
+		"FirePosOffset" : 
+		[
+			-5.0,
+			80.0,
+			0.0
+		],
+		"MaxHP" : 100,
+		"MoveSpeed" : 70,
+		"Size" : 
+		[
+			50.0,
+			50.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"D:\\Dev\\TopDownShooter\\_Resources\\_Textures\\GameObject\\Pyro.png"
+		]
+	},
+	"RedAssault" : 
+	{
+		"FirePosOffset" : 
+		[
+			10.0,
+			60.0,
+			0.0
+		],
+		"MaxHP" : 100,
+		"MoveSpeed" : 70,
+		"Size" : 
+		[
+			50.0,
+			50.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Red Assault.png"
+		]
+	},
+	"Sniper" : 
+	{
+		"FirePosOffset" : 
+		[
+			-5.0,
+			80.0,
+			0.0
+		],
+		"MaxHP" : 50,
+		"MoveSpeed" : 170,
+		"Size" : 
+		[
+			70.0,
+			70.0,
+			1.0
+		],
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Sniper.png"
+		]
+	},
+	"Tech" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	}
+}

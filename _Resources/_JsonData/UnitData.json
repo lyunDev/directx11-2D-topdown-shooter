@@ -1,0 +1,233 @@
+{
+	"Assault" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"BrownAssault" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Cannoneer" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Clone" : 
+	{
+		"FirePosOffset" : 
+		[
+			23523534.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 1231,
+		"MoveSpeed" : 14151,
+		"Size" : 
+		[
+			23523534.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			"D:\\Dev\\TopDownShooter\\_Resources\\_Textures\\GameObject\\Clone.png"
+		]
+	},
+	"Engineer" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Medic" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Nebulizer" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Pyro" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"RedAssault" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Sniper" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Tech" : 
+	{
+		"FirePosOffset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"MaxHP" : 0,
+		"MoveSpeed" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"TexturePath" : 
+		[
+			""
+		]
+	}
+}

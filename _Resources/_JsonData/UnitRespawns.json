@@ -1,0 +1,79 @@
+{
+	"Assault" : 
+	{
+		"Delay" : 1.0,
+		"EndRespawnTime" : 120.0,
+		"PoolMaximum" : 2,
+		"StartRespawnTime" : 30.0
+	},
+	"BrownAssault" : 
+	{
+		"Delay" : 0.0,
+		"EndRespawnTime" : 0.0,
+		"PoolMaximum" : 0,
+		"StartRespawnTime" : 0.0
+	},
+	"Cannoneer" : 
+	{
+		"Delay" : 1.0,
+		"EndRespawnTime" : 150.0,
+		"PoolMaximum" : 1,
+		"StartRespawnTime" : 90.0
+	},
+	"Clone" : 
+	{
+		"Delay" : 1.0,
+		"EndRespawnTime" : 60.0,
+		"PoolMaximum" : 5,
+		"StartRespawnTime" : 0.0
+	},
+	"Engineer" : 
+	{
+		"Delay" : 1.0,
+		"EndRespawnTime" : 150.0,
+		"PoolMaximum" : 2,
+		"StartRespawnTime" : 120.0
+	},
+	"Medic" : 
+	{
+		"Delay" : 0.0,
+		"EndRespawnTime" : 0.0,
+		"PoolMaximum" : 0,
+		"StartRespawnTime" : 0.0
+	},
+	"Nebulizer" : 
+	{
+		"Delay" : 1.0,
+		"EndRespawnTime" : 150.0,
+		"PoolMaximum" : 1,
+		"StartRespawnTime" : 120.0
+	},
+	"Pyro" : 
+	{
+		"Delay" : 0.0,
+		"EndRespawnTime" : 0.0,
+		"PoolMaximum" : 0,
+		"StartRespawnTime" : 0.0
+	},
+	"RedAssault" : 
+	{
+		"Delay" : 0.0,
+		"EndRespawnTime" : 0.0,
+		"PoolMaximum" : 0,
+		"StartRespawnTime" : 0.0
+	},
+	"Sniper" : 
+	{
+		"Delay" : 1.0,
+		"EndRespawnTime" : 150.0,
+		"PoolMaximum" : 1,
+		"StartRespawnTime" : 120.0
+	},
+	"Tech" : 
+	{
+		"Delay" : 0.0,
+		"EndRespawnTime" : 0.0,
+		"PoolMaximum" : 0,
+		"StartRespawnTime" : 0.0
+	}
+}

@@ -1,0 +1,233 @@
+{
+	"Assault" : 
+	{
+		"CollisionSize" : 
+		[
+			15.0,
+			30.0,
+			1.0
+		],
+		"Damage" : 2,
+		"Size" : 
+		[
+			60.0,
+			100.0,
+			1.0
+		],
+		"Speed" : 150,
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\Plazma_Yellow_Projectile.png"
+		]
+	},
+	"BrownAssault" : 
+	{
+		"CollisionSize" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Damage" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Speed" : 0,
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Cannoneer" : 
+	{
+		"CollisionSize" : 
+		[
+			30.0,
+			50.0,
+			1.0
+		],
+		"Damage" : 2,
+		"Size" : 
+		[
+			70.0,
+			100.0,
+			1.0
+		],
+		"Speed" : 100,
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\FireBall_Orange_HardProjectile.png"
+		]
+	},
+	"Clone" : 
+	{
+		"CollisionSize" : 
+		[
+			15.0,
+			15.0,
+			1.0
+		],
+		"Damage" : 2,
+		"Size" : 
+		[
+			50.0,
+			50.0,
+			1.0
+		],
+		"Speed" : 100,
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\Ion_Blue_Projectile.png"
+		]
+	},
+	"Engineer" : 
+	{
+		"CollisionSize" : 
+		[
+			40.0,
+			20.0,
+			1.0
+		],
+		"Damage" : 2,
+		"Size" : 
+		[
+			50.0,
+			40.0,
+			1.0
+		],
+		"Speed" : 100,
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\PlazmaElipse_Green_Projectile.png"
+		]
+	},
+	"Medic" : 
+	{
+		"CollisionSize" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Damage" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Speed" : 0,
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Nebulizer" : 
+	{
+		"CollisionSize" : 
+		[
+			15.0,
+			30.0,
+			1.0
+		],
+		"Damage" : 2,
+		"Size" : 
+		[
+			60.0,
+			100.0,
+			1.0
+		],
+		"Speed" : 150,
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\Plazma_Yellow_Projectile.png"
+		]
+	},
+	"Pyro" : 
+	{
+		"CollisionSize" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Damage" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Speed" : 0,
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"RedAssault" : 
+	{
+		"CollisionSize" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Damage" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Speed" : 0,
+		"TexturePath" : 
+		[
+			""
+		]
+	},
+	"Sniper" : 
+	{
+		"CollisionSize" : 
+		[
+			15.0,
+			50.0,
+			1.0
+		],
+		"Damage" : 2,
+		"Size" : 
+		[
+			30.0,
+			70.0,
+			1.0
+		],
+		"Speed" : 300,
+		"TexturePath" : 
+		[
+			"..\\_Resources\\_Textures\\GameObject\\Projectiles\\PlazmaArrow_Red_Projectile.png"
+		]
+	},
+	"Tech" : 
+	{
+		"CollisionSize" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Damage" : 0,
+		"Size" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Speed" : 0,
+		"TexturePath" : 
+		[
+			""
+		]
+	}
+}
